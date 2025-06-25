@@ -5,7 +5,7 @@
 
 ### TL;DR: 
 - It's unlikely that attackers would forget to change their keyboard language when remoting into a box, primarily because shells like CMD and Bash are inherently built for English commands. The operating system's chosen OS profile or keyboard language layout does not change the language of the inherent shell. I suspect it is more likely to catch an alias in a foreign language than, than forgetting to change the keyboard language input as English. Another concept is that there are some keyboard mappings where they do not align with QWERTY but that seems very rare to observe these days.
-- 
+
 #### Additional Context:
 - This idea stemmed from observing Chinese characters in malware samples. I began to wonder if, upon changing the language of a Linux or Windows machine, the shell commands themselves would change. Research confirmed they do not. Shells are built upon the English language and settings changed with the OS's GUI will not modify shell's syntax. You can create aliases or functions in foreign  languages, but I haven't found any evidence/reports that attackers have been observed do this.
 
